@@ -56,7 +56,7 @@ const Chats = () => {
   });
 
   return (
-    <section className="flex flex-1 flex-col-reverse py-2 px-4 overflow-y-scroll">
+    <section className="flex flex-1 flex-col-reverse py-2 px-4 overflow-y-scroll overflow-x-hidden">
       {chatList.map((chat: chat) => (
         <Card chat={chat} key={chat.id} />
       ))}
